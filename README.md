@@ -14,4 +14,5 @@
 
 ### Demo
 
-- **Frontend**: [Coming Sooon]()
+- **Frontend**: [View Here](https://todo-dapp-24.vercel.app/)
+- **Frontend Code Repository**: [View Frontend Repo](https://github.com/yaasiinaxmed/Todo-DApp)
