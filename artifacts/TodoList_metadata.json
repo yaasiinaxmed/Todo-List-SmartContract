@@ -75,6 +75,30 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getTask",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "taskCount",
 				"outputs": [
@@ -182,11 +206,11 @@
 	},
 	"sources": {
 		"TodoList.sol": {
-			"keccak256": "0x0a88a56a96dbed9cd403ddf11b81b91f88869b45481918b17c84210af767cc1b",
+			"keccak256": "0x455abf5fde86e4156057d21d52de0f02444b80e5eb4877578961e153efcb3525",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c471e52cc70b83c0de09ed737a80b9251b9616498866cea2857ae92026dd470",
-				"dweb:/ipfs/QmPcqLVHAhib1Ee6kPcAmvSeA26sbv4CmT8jgwMJoPKyGy"
+				"bzz-raw://0db7f3d22067d9b1d5c1d7d27a07d4c2338a604b56a0a71b86a8657eb3bfc259",
+				"dweb:/ipfs/QmQ63it79xPHkw9UQxbnTobpPeX1atP1HgujMEsj9kZEVa"
 			]
 		}
 	},

@@ -32,4 +32,11 @@ contract TodoList {
         task.completed = !task.completed;
         emit TaskCompleted(msg.sender, _id, task.completed);
     }
+
+    // Function to fetch a task for the sender
+    function getTask(uint _id) public view returns (string memory content, bool completed) {
+        Task memory task = tasks[msg.sender][_id];
+        require(task.id != 0, "Task not found"); // Ensure task exists
+        return (task.content, task.completed);
+    }
 }
