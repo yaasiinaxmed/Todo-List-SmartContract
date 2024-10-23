@@ -100,6 +100,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getUserTaskCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "taskCount",
 				"outputs": [
 					{
@@ -206,11 +219,11 @@
 	},
 	"sources": {
 		"TodoList.sol": {
-			"keccak256": "0x455abf5fde86e4156057d21d52de0f02444b80e5eb4877578961e153efcb3525",
+			"keccak256": "0xdd38ef03332934f0a6a5084522154821d157d3ac9d7d47d0ddb4241d86663f63",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0db7f3d22067d9b1d5c1d7d27a07d4c2338a604b56a0a71b86a8657eb3bfc259",
-				"dweb:/ipfs/QmQ63it79xPHkw9UQxbnTobpPeX1atP1HgujMEsj9kZEVa"
+				"bzz-raw://c637a9c60f9e040da8d289faee285466aa8ef57e2288b80537bbfb9a9ba7b817",
+				"dweb:/ipfs/QmQKg6SJGZ9zqi2thVvs1YBHXGymLP5mZUEA1WEXsF3Yav"
 			]
 		}
 	},

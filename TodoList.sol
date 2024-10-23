@@ -39,4 +39,9 @@ contract TodoList {
         require(task.id != 0, "Task not found"); // Ensure task exists
         return (task.content, task.completed);
     }
+
+    // Function to get the number of tasks a user has
+    function getUserTaskCount() public view returns (uint) {
+        return userTaskCount[msg.sender];
+    }
 }
