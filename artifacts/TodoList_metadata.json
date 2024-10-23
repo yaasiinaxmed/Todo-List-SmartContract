@@ -124,6 +124,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "toggleTaskCompleted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -169,11 +182,11 @@
 	},
 	"sources": {
 		"TodoList.sol": {
-			"keccak256": "0x722cdba536e42f84ae5e7d43071532f2d1f1346936516d298a3ccda47880fcd4",
+			"keccak256": "0x0a88a56a96dbed9cd403ddf11b81b91f88869b45481918b17c84210af767cc1b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://444e671ecd1583094b6955f1cec2e002ad180fb0e221a067c14d6373f1a4690f",
-				"dweb:/ipfs/QmbEQqtaVsctR86s4PRUs4xLwxHhniKJLuu1RfbJFsejaK"
+				"bzz-raw://7c471e52cc70b83c0de09ed737a80b9251b9616498866cea2857ae92026dd470",
+				"dweb:/ipfs/QmPcqLVHAhib1Ee6kPcAmvSeA26sbv4CmT8jgwMJoPKyGy"
 			]
 		}
 	},
