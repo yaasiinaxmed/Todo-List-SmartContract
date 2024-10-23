@@ -77,35 +77,34 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_id",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
 					}
 				],
-				"name": "getTask",
+				"name": "getAllTasksByUser",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "content",
-						"type": "string"
-					},
-					{
-						"internalType": "bool",
-						"name": "completed",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getUserTaskCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct TodoList.Task[]",
 						"name": "",
-						"type": "uint256"
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -219,11 +218,11 @@
 	},
 	"sources": {
 		"TodoList.sol": {
-			"keccak256": "0xdd38ef03332934f0a6a5084522154821d157d3ac9d7d47d0ddb4241d86663f63",
+			"keccak256": "0x64b06c8146009d9f7602b9dd6c3ed9171b6404a509289222f2e55a0c0319fa40",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c637a9c60f9e040da8d289faee285466aa8ef57e2288b80537bbfb9a9ba7b817",
-				"dweb:/ipfs/QmQKg6SJGZ9zqi2thVvs1YBHXGymLP5mZUEA1WEXsF3Yav"
+				"bzz-raw://76c4cef9dec40c207e72e25be0a362f2180b0fd3231376c2107f305877a92852",
+				"dweb:/ipfs/QmVJU5mG6LqGe8VbBGgPDPdpa9mEsoK9272MkppqCygR8a"
 			]
 		}
 	},

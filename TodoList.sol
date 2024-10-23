@@ -33,15 +33,16 @@ contract TodoList {
         emit TaskCompleted(msg.sender, _id, task.completed);
     }
 
-    // Function to fetch a task for the sender
-    function getTask(uint _id) public view returns (string memory content, bool completed) {
-        Task memory task = tasks[msg.sender][_id];
-        require(task.id != 0, "Task not found"); // Ensure task exists
-        return (task.content, task.completed);
-    }
+    // Function to get all tasks for a specific user address as an array of task objects
+    function getAllTasksByUser(address _user) public view returns (Task[] memory) {
+        uint count = userTaskCount[_user];
+        Task[] memory userTasks = new Task[](count);
 
-    // Function to get the number of tasks a user has
-    function getUserTaskCount() public view returns (uint) {
-        return userTaskCount[msg.sender];
+        for (uint i = 1; i <= count; i++) {
+            Task memory task = tasks[_user][i];
+            userTasks[i - 1] = task;
+        }
+
+        return userTasks;
     }
 }
